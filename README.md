@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/25341867/README.md)
+[README.md](https://github.com/user-attachments/files/25343379/README.md)
 # Multi-Site E-Commerce Scraper API
 
 A flexible, configurable scraper API that works with any e-commerce website. Configure sites dynamically through your frontend app without redeploying.
