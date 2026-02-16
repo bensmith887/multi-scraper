@@ -1,0 +1,90 @@
+{
+  "toolstation": {
+    "name": "Tool Station",
+    "searchUrl": "https://www.toolstation.com/search?q={query}",
+    "selectors": {
+      "productCard": "[class*='product'], [data-testid='product-card']",
+      "title": "h2, h3, [class*='title']",
+      "price": "[class*='price']",
+      "image": "img",
+      "link": "a",
+      "brand": "[class*='brand']",
+      "rating": "[class*='rating'], [class*='stars']"
+    },
+    "detailSelectors": {
+      "title": "h1",
+      "price": "[class*='price']",
+      "description": "[class*='description'], [class*='detail']",
+      "brand": "[class*='brand']",
+      "rating": "[class*='rating']",
+      "images": "img[class*='product']",
+      "availability": "[class*='stock'], [class*='availability']"
+    }
+  },
+  "screwfix": {
+    "name": "Screwfix",
+    "searchUrl": "https://www.screwfix.com/search?term={query}",
+    "selectors": {
+      "productCard": ".product-tile, [data-test='product-tile']",
+      "title": ".product-name, h3",
+      "price": ".price",
+      "image": "img.product-image",
+      "link": "a.product-link",
+      "brand": ".brand",
+      "rating": ".rating"
+    },
+    "detailSelectors": {
+      "title": "h1.product-title",
+      "price": ".price-value",
+      "description": ".product-description",
+      "brand": ".brand-name",
+      "rating": ".rating-value",
+      "images": ".product-gallery img",
+      "availability": ".availability-message"
+    }
+  },
+  "amazon": {
+    "name": "Amazon",
+    "searchUrl": "https://www.amazon.co.uk/s?k={query}",
+    "selectors": {
+      "productCard": "[data-component-type='s-search-result']",
+      "title": "h2 span",
+      "price": ".a-price-whole",
+      "image": "img.s-image",
+      "link": "a.a-link-normal",
+      "brand": ".a-size-base-plus",
+      "rating": ".a-icon-star-small"
+    },
+    "detailSelectors": {
+      "title": "#productTitle",
+      "price": ".a-price-whole",
+      "description": "#feature-bullets",
+      "brand": "#bylineInfo",
+      "rating": ".a-icon-star",
+      "images": "#altImages img",
+      "availability": "#availability"
+    }
+  },
+  "generic": {
+    "name": "Generic E-Commerce",
+    "searchUrl": "https://example.com/search?q={query}",
+    "selectors": {
+      "productCard": ".product, .product-card, [data-product]",
+      "title": "h2, h3, .product-title, .product-name",
+      "price": ".price, .product-price, [data-price]",
+      "image": "img",
+      "link": "a",
+      "brand": ".brand, .product-brand",
+      "rating": ".rating, .stars, [data-rating]"
+    },
+    "detailSelectors": {
+      "title": "h1",
+      "price": ".price, .product-price",
+      "description": ".description, .product-description",
+      "brand": ".brand",
+      "rating": ".rating",
+      "images": ".product-image, .gallery img",
+      "availability": ".stock, .availability"
+    }
+  }
+}
